@@ -1130,6 +1130,10 @@ section {
 }
 .product .pimgs .imgs_small img {
   max-width: 150px;
+  transition: 250ms;
+}
+.product .pimgs .imgs_small img:hover {
+  border: solid 1px #7c7067;
 }
 .product .pcontent {
   padding: 2vh 2.5vw;
@@ -1481,22 +1485,24 @@ section {
   }
 
   .product {
-    height: 194vh;
+    height: 94vh;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 100px;
-    margin-top: -97vh;
     padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
   }
-
-  .pcontent {
+  .product .pimgs {
+    display: none;
+  }
+  .product .pcontent {
     margin: auto;
+    margin-top: 0;
   }
-
-  .pimgs {
-    display: none;
-  }
-  .pimgs img {
-    display: none;
+  .product .pcontent h1 {
+    font-size: 1.8rem;
   }
 
   .itempd {
