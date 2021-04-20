@@ -18,6 +18,7 @@ const product_phone = $("#pph")
           items:1,
           loop:true,
           margin:10,
+          lazyLoad: true,
           responsive:{
               900:{
                   items:1
@@ -25,4 +26,29 @@ const product_phone = $("#pph")
           }
       });
 
- 
+      const rec = $("#rec")
+      rec.owlCarousel({
+           center: true,
+           loop:true,
+           margin:10,
+           lazyLoad: true,
+           nav:false,
+           dots: false,
+           responsive: {
+               0: {
+                    items: 2
+               },
+               530: {
+                    items: 2
+               },
+               800: {
+                    items: 3
+               },
+               1000: {
+                    items: 3.8
+               },
+               1200: {
+                    items: 5
+               },
+          }
+       });
